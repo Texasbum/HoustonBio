@@ -16,6 +16,12 @@ outputs:
     - HTML
     - RSS
     - Algolia
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
 params:
   SEOTitle: Houston's Fieldnotes | Wildlife & Adventure
   about_me: yes
