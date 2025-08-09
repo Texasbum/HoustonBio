@@ -1,12 +1,16 @@
 
 ---
-title: "Welcome to Houston's Fieldnotes"
+
 description: "Exploring wildlife, wild places, and the stories that connect them."
 layout: "index"
 
 ---
 
-![Hero Image](/img/Headshot.jpg)
+
+<div class="hero-image-container">
+  <img src="/img/Headshot.jpg" alt="Hero Image" />
+</div>
+
 
 ## Hi, I’m Houston
 
