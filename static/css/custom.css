@@ -1,6 +1,5 @@
-.containerbody {
-  border: 5px solid red !important;
-} {
+  .containerbody {
+  border: 5px solid red !important
   max-width: 900px !important;
   margin-left: auto !important;
   margin-right: auto !important;
