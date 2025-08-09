@@ -6,12 +6,12 @@ layout: "index"
 
 ---
 
-![Hero Image](/img/MTs.jpg)
+![Hero Image](/img/Headshot.jpg)
 
-## 👋 Hi, I’m Houston
+## Hi, I’m Houston
 
 Conservationist, scientist, and wanderer.  
-From the rugged shores of San Clemente Island to distant landscapes across the globe, I study predators, document their stories, and share the connections that bind ecosystems together.
+From the rugged shores of San Clemente Island to frozen mountains in Montana, I study unique creatures in amazing landscapes, document my stories, and share what makes these ecosystems special.
 
 <div id="storymap" style="height: 400px; width:100%; margin-bottom: 30px;"></div>
 
@@ -31,14 +31,14 @@ From the rugged shores of San Clemente Island to distant landscapes across the g
 
 ---
 
-### 📓 Fieldnotes
+###  Fieldnotes
 Stories from the field, blending science, adventure, and observation.  
 [Read the latest →](/fieldnotes/)
 
 ---
 
-### 📷 Media
-Photography and video from my journeys in wildlife conservation.  
+###  Media
+Photography and articles from my journey in wildlife conservation.  
 [Explore the gallery →](/media/)
 
 ---
