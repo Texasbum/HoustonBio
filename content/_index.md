@@ -2,6 +2,8 @@
 ---
 title: "Welcome to Houston's Fieldnotes"
 description: "Exploring wildlife, wild places, and the stories that connect them."
+layout: "index"
+
 ---
 
 ![Hero Image](/img/MTs.jpg)
