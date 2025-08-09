@@ -30,18 +30,4 @@ Photography and video from my journeys in wildlife conservation.
 ---
 
 ### Recent Fieldnotes
-
 {{< recent-posts 3 >}}
-{{ define "main" }}
-<div class="homepage-wrapper" style="display: flex; gap: 30px;">
-
-  <main class="homepage-content" style="flex: 1;">
-    {{ .Content }}
-  </main>
-
-  <aside class="homepage-sidebar" style="width: 300px;">
-    {{ partial "sidebar.html" . }}
-  </aside>
-
-</div>
-{{ end }}
