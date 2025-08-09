@@ -14,8 +14,9 @@ layout: "index"
 
 ## Hi, I’m Houston
 
-Conservationist, scientist, and wanderer.  
-From the rugged shores of San Clemente Island to frozen mountains in Montana, I study unique creatures in amazing landscapes, document my stories, and share what makes these ecosystems special.
+Conservationist, scientist, and wanderer. 
+
+From the rugged shores of San Clemente Island to the snow-covered mountains of Montana, I study unique creatures in amazing landscapes, document my stories, and share what makes these ecosystems special.
 
 <div id="storymap" style="height: 400px; width:100%; margin-bottom: 30px;"></div>
 
