@@ -15,10 +15,6 @@ From the rugged shores of San Clemente Island to distant landscapes across the g
 
 <div id="storymap" style="height: 400px; width:100%; margin-bottom: 30px;"></div>
 
-<div id="storymap" style="height: 400px; width: 100%; margin-bottom: 30px;"></div>
-
-<div id="storymap" style="height: 400px; width: 100%; margin-bottom: 30px;"></div>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var map = L.map('storymap').setView([34.05, -118.25], 8);
