@@ -70,7 +70,7 @@ params:
     个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice
   leancloud_app_id: ''
   leancloud_app_key: ''
-  omit_categories: no
+  omit_categories: yes
   page_view_counter: no
   reward: yes
   sidebar_about_description: Conservationist, Wildlife Biologist and Wanderer
