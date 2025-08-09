@@ -1,5 +1,5 @@
-baseurl: https://zhaohuabing.com
-title: Huabing Blog
+baseurl: fascinating-crisp-f1e7c1.netlify.app
+title: Houston's Fieldnotes
 theme: hugo-theme-cleanwhite
 languageCode: en-us
 preserveTaxonomyNames: yes
@@ -17,13 +17,13 @@ outputs:
     - RSS
     - Algolia
 params:
-  SEOTitle: 赵化冰的博客 | Zhaohuabing Blog
+  SEOTitle: Fieldnotes | Fieldnotes
   about_me: yes
   additional_menus:
-    - href: /archive/
-      title: ARCHIVE
-    - href: /notes/
-      title: NOTES
+    - href: /fieldnotes/
+      title: Fieldnotes
+    - href: /media/
+      title: MEDIA
     - href: /about/
       title: ABOUT
   algolia:
@@ -61,11 +61,11 @@ params:
   featured_condition_size: 1
   featured_tags: yes
   friend_link:
-    - href: https://zhaozhihan.com
+    - href: fascinating-crisp-f1e7c1.netlify.app
       title: Linda的博客
-  friends: yes
-  header_image: img/home-bg-jeep.jpg
-  image_404: img/404-bg.jpg
+  friends: no
+  header_image: img/MT.jpg
+  image_404: img/despair.jpg
   keyword: 赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客,
     个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice
   leancloud_app_id: ''
@@ -73,17 +73,16 @@ params:
   omit_categories: no
   page_view_counter: no
   reward: yes
-  sidebar_about_description: Software Developer, Open Source Enthusiast and Life Adventurer
-  sidebar_avatar: img/zhaohuabing.png
-  slogan: 路在脚下，心向远方
+  sidebar_about_description: Conservationist, Wildlife Biologist and Wanderer
+  sidebar_avatar: img/Headshot.jpg
+  slogan: Be a Half-hearted Fanatic
   social:
-    email: youremail@gmail.com
-    github: https://github.com/yourgithub
-    linkedin: https://www.linkedin.com/in/yourlinkedinid
+    email: hlbumg@yahoo.com
+    github: https://github.com/Texasbum
+    linkedin: https://www.linkedin.com/in/houston-bumgarner-45705619a
     rss: yes
-    stackoverflow: https://stackoverflow.com/users/yourstackoverflowid
-    wechat: your wechat qr code image
-  title_404: 你来到了没有知识的荒原 :(
+    instagram: https://www.instagram.com/houston_outside/
+  title_404: Nothing beside remains. Round the decay Of that colossal Wreck, boundless and bare :(
   twikoo_env_id: ''
   upstreamAttribution: yes
 outputFormats:
