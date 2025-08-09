@@ -17,7 +17,7 @@ outputs:
     - RSS
     - Algolia
 params:
-  SEOTitle: Fieldnotes | Fieldnotes
+  SEOTitle: Houston's Fieldnotes | Wildlife & Adventure
   about_me: yes
   additional_menus:
     - href: /fieldnotes/

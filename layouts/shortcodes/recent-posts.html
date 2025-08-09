@@ -1,0 +1,9 @@
+{{ $pages := first (index .Params 0 | default 5) (where .Site.RegularPages "Section" "fieldnotes") }}
+<ul>
+  {{ range $pages }}
+<li>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a> — {{ .Date.Format "Jan 2, 2006" }}
+  </li>
+    {{ end }}
+  </ul>
+    

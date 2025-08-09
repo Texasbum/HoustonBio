@@ -1,25 +1,33 @@
-+++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
-+++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+---
+title: "Welcome to Houston's Fieldnotes"
+description: "Exploring wildlife, wild places, and the stories that connect them."
+---
 
-Hugo makes use of a variety of open source projects including:
+![Hero Image](/img/MTs.jpg)
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## 👋 Hi, I’m Houston
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Conservationist, scientist, and wanderer.  
+From the rugged shores of San Clemente Island to distant landscapes across the globe, I study predators, document their stories, and share the connections that bind ecosystems together.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+---
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+### 📓 Fieldnotes
+Stories from the field, blending science, adventure, and observation.  
+[Read the latest →](/fieldnotes/)
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+---
+
+### 📷 Media
+Photography and video from my journeys in wildlife conservation.  
+[Explore the gallery →](/media/)
+
+---
+
+> *"The road goes ever on and on, down from the door where it began."* – Tolkien
+
+---
+
+### Recent Fieldnotes
+{{< recent-posts 3 >}}
