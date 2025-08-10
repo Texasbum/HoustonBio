@@ -1,6 +1,11 @@
 ---
 title: "About"
 ---
+
+<div class="hero-image-container">
+  <img src="/img/Headshot3.jpg" alt="Hero Image" />
+</div>
+
 Hi, I’m Houston — a conservation biologist, picture-taker, and perpetual wanderer of wild places. I’ve trapped foxes on a desert island in the Pacific, camped on mountain tops, and spent more time than I’d like to admit figuring out how to get my daily coffee in the backcountry.
 
 My work blends collecting experiences, conserving the coolest species on the planet, and meeting people straight out of a work of fiction. I’m constintley in disbelief of what I experience in a regular workday, so I wanted to help connect others to the reality that is the living world.
