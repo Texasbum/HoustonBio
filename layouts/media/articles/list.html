@@ -8,6 +8,8 @@
         <a href="{{ $article.Permalink }}">
           <img src="{{ . | relURL }}" alt="{{ $article.Title }}" style="width: 150px; height: auto; object-fit: cover; border-radius: 6px;">
         </a>
+      {{ else }}
+        <!-- Optional placeholder or just skip image -->
       {{ end }}
       <div>
         <a href="{{ $article.Permalink }}" style="font-weight: bold; font-size: 2.0rem; text-decoration: none; color: inherit;">
