@@ -22,10 +22,10 @@ My work blends collecting experiences, conserving the coolest species on the pla
 - Lynx Capture Technician — University of Wyoming/USFS RMRS (Jan-Mar  2025)
 - Lynx Camera Trap Technician — University of Wyoming/USFS RMRS (May-Oct 2024)
 - Aquatic Wildlife Technician — National Park Service (Jun-Oct 2023)
-- Collegiate CLub President — Backcountry Hunters and Anglers (May 2022-May 2023)
+- Collegiate Club President — Backcountry Hunters and Anglers (May 2022-May 2023)
 - Fisheries Technician — US Forest Service (May-Aug 2022)
-Red Wolf/Quail Technician- Wildlands Network (May- Aug 2021)
-Microbiology Lab Technician- Enzerna Biosciences (Jun-Aug 2019) 
+- Red Wolf/Quail Technician- Wildlands Network (May- Aug 2021)
+- Microbiology Lab Technician- Enzerna Biosciences (Jun-Aug 2019) 
 
 
 ## Field Skills  
