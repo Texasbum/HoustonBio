@@ -1,0 +1,30 @@
+<div class="article-card">
+  {{ with .Get "image" }}
+    <img src="{{ . }}" alt="Article image" class="article-card-image">
+  {{ end }}
+  <div class="article-card-content">
+    <h3><a href="{{ .Get "link" }}">{{ .Get "title" }}</a></h3>
+    <p>{{ .Get "description" }}</p>
+  </div>
+</div>
+
+<style>
+.article-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.article-card-image {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+.article-card-content h3 {
+  margin: 0;
+}
+.article-card-content p {
+  margin: 0.5rem 0 0;
+}
+</style>
