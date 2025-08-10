@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <ul style="list-style:none; padding:0; display:flex; flex-wrap: wrap; gap: 1rem;">
+  <h1 style="margin: 0 1.5rem 1rem 1.5rem;">{{ .Title }}</h1>
+  <ul style="list-style:none; padding: 0 1.5rem; margin: 0 0 2rem 0; display: flex; flex-wrap: wrap; gap: 1rem;">
     {{ range .Pages.ByDate.Reverse }}
       <li style="width:150px;">
         {{ with .Params.cover }}
-          <a href="{{ $.RelPermalink }}"> <!-- link to post, not image -->
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 150px; height: auto; display:block; object-fit: cover; border-radius: 4px;" />
+          <a href="{{ $.RelPermalink }}">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 150px; height: auto; display:block; object-fit: cover; border-radius: 4px; margin: 0.5rem 0;" />
           </a>
         {{ else }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>

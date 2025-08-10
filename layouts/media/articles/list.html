@@ -1,12 +1,13 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <ul style="list-style: none; padding: 0;">
+  <h1 style="margin: 0 1.5rem 1rem 1.5rem;">{{ .Title }}</h1>
+  <h2 style="margin: 1rem 1.5rem; font-weight: 600; font-size: 1.8rem; border-bottom: 2px solid #ccc; padding-bottom: 0.3rem;">Articles</h2>
+  <ul style="list-style: none; padding: 0 1.5rem; margin: 0 0 2rem 0;">
   {{ range .Pages.ByDate.Reverse }}
     {{ $article := . }} <!-- Save current article -->
     <li style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
       {{ with $article.Params.cover }}
         <a href="{{ $article.Permalink }}">
-          <img src="{{ . | relURL }}" alt="{{ $article.Title }}" style="width: 150px; height: auto; object-fit: cover; border-radius: 6px;">
+          <img src="{{ . | relURL }}" alt="{{ $article.Title }}" style="width: 150px; height: auto; display:block; object-fit: cover; border-radius: 4px; margin: 0.5rem 0;" >
         </a>
       {{ else }}
         <!-- Optional placeholder or just skip image -->
