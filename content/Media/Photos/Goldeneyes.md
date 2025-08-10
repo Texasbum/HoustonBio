@@ -1,6 +1,8 @@
 ---
 title: "Juvie Goldeneyes"
 date: 2024-08-14
+draft: false
+slug: "juvie-goldeneyes"
 cover: "/images/photos/goldeneyes.jpg"
 ---
 

@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.cover }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="max-width: 100%; height: auto;" />
+  {{ end }}
+
+  <article>
+    {{ .Content }}
+  </article>
+{{ end }}
