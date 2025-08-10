@@ -6,8 +6,8 @@ Welcome to my media collection! Below are photos I've taken and articles I've wr
 
 ## Photos
 
-[View all photos](/media/Photos/)
+[View all photos](/media/photos/)
 
 ## Articles
 
-[View all articles](/media/Articles/)
+[View all articles](/media/articles/)
