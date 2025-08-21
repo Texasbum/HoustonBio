@@ -1,0 +1,95 @@
+/* ============================ */
+/* Storymap wrapper */
+.storymap-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex container for map + scroll */
+#storymap {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+/* Map section */
+#map {
+  flex: 3;
+  min-width: 300px;
+  height: 100%;
+}
+
+/* Scrollable text section */
+#scroll {
+  flex: 2;
+  min-width: 300px;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  box-sizing: border-box;
+}
+
+/* ============================ */
+/* Steps */
+.step {
+  margin-bottom: 80vh;
+  padding: 1rem;
+  border-left: 4px solid #ccc;
+  transition: background 0.5s, border-color 0.5s;
+}
+
+/* Active step styling */
+.step.active {
+  border-color: #2b7a78;
+  background: #e0f7f7;
+}
+
+/* ============================ */
+/* Container for multiple images */
+.step-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.step-img {
+  flex: 1 1 48%;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.step-image-wrapper {
+  flex: 1 1 48%;  /* responsive two images per row */
+  box-sizing: border-box;
+}
+
+
+.step.active .step-img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================ */
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  #storymap {
+    flex-direction: column;
+    height: auto;
+  }
+  #map { height: 50vh; }
+  #scroll { max-height: 50vh; }
+}
+
+@media screen and (max-width: 768px) {
+  .step-image-wrapper {
+    flex: 1 1 100%; /* stack images on mobile */
+    max-width: 100%;
+  }
+}
