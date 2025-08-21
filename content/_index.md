@@ -8,7 +8,7 @@ layout: "index"
 
 
 <div class="hero-image-container">
-  <img src="/img/Headshot.jpg" alt="Hero Image" />
+  <img src="/img/Headshot.jpg" alt="Hero Image" style="width:900px; max-width:90%;">
 </div>
 
 

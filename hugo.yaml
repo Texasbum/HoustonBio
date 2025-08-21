@@ -4,34 +4,44 @@ theme: hugo-theme-cleanwhite
 languageCode: en-us
 preserveTaxonomyNames: yes
 hasCJKLanguage: yes
+
 services:
   disqus:
     shortname: ''
   googleAnalytics:
     id: ''
+
 pagination:
   pagerSize: 5
+
 outputs:
   home:
     - HTML
     - RSS
     - Algolia
+
 menu:
   main:
     - identifier: home
       name: Home
       url: /
-      weight: 1
+      weight: 0
+
+# Front matter of pages now adds them to menu
+# - About and Media are no longer in additional_menus
+
 params:
   SEOTitle: Houston's Fieldnotes | Wildlife & Adventure
-  about_me: no
   additional_menus:
     - href: /fieldnotes/
       title: Fieldnotes
+      weight: 1
     - href: /media/
-      title: MEDIA
+      title: Media
+      weight: 2
     - href: /about/
-      title: ABOUT
+      title: About
+      weight: 3
   algolia:
     params:
       - categories
@@ -50,7 +60,6 @@ params:
   artalk_enable: yes
   artalk_server: https://xxx.xxx.com
   artalk_site: xxx blog
-  ba_track_id: ''
   bookmark_link:
     - href: https://martinfowler.com
       title: Martin Fowler
@@ -59,24 +68,14 @@ params:
     - href: https://pxhere.com
       title: Pxhere
     - href: https://unsplash.com
-      title: unsplash
+      title: Unsplash
   bookmarks: no
   description: 赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。
-  disqus_proxy: ''
-  disqus_site: ''
   featured_condition_size: 1
   featured_tags: yes
-  friend_link:
-    - href: fascinating-crisp-f1e7c1.netlify.app
-      title: Linda的博客
-  friends: no
   header_image: img/MTs.jpg
   image_404: img/despair.jpg
-  keyword: 赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客,
-    个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice
-  leancloud_app_id: ''
-  leancloud_app_key: ''
-  omit_categories: yes
+  keyword: 赵化冰, zhaohuabing, Zhaohuabing, 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice
   page_view_counter: no
   reward: yes
   sidebar_about_description: Conservationist, Scientist, and Wanderer
@@ -89,14 +88,15 @@ params:
     rss: yes
     instagram: https://www.instagram.com/houston_outside/
   title_404: Nothing beside remains. Round the decay Of that colossal Wreck, boundless and bare :(
-  twikoo_env_id: ''
   upstreamAttribution: yes
+
 outputFormats:
   Algolia:
     baseName: algolia
     isPlainText: yes
     mediaType: application/json
     notAlternative: yes
+
 markup:
   goldmark:
     renderer:
@@ -104,5 +104,5 @@ markup:
   highlight:
     style: dracula
   tableOfContents:
-    endLevel: 2
     startLevel: 1
+    endLevel: 2

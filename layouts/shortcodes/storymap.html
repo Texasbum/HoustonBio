@@ -1,0 +1,91 @@
+<div class="storymap-wrapper">
+  <div id="storymap">
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Scrollable text + images -->
+    <div id="scroll">
+
+   
+
+      <!-- Step 1 -->
+      <div class="step" data-loc="[32.919184, -118.509324]" data-zoom="7">
+        <h2>San Clemente Island, CA  2025</h2>
+        <p>I began my first permanent position as a wildlife biologist.</p>
+        <img src="{{ "/images/lynx1.jpg" | relURL }}" alt="Beach Fieldwork" class="step-img">
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step" data-loc="[47.175831, -113.479324]" data-zoom="8">
+        <h2>Seeley Lake, MT  2025</h2>
+        <p>Winter work on the doorstep of the Bob Marshall Wilderness. Trapping Canada Lynx in the mountains of Montana for conservation.</p>
+        <img src="{{ "/images/lynx1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="step" data-loc="[48.7592, -114.2843]" data-zoom="8">
+        <h2>Polebridge, MT  2024</h2>
+        <p>Travesing an entire mountain range in search of Canada Lynx. Hiking and biking 15+ miles a day to set up an extensive camera trap grid across the Whitefish Mountain Range.</p>
+        <img src="{{ "/images/montana1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+      
+      <!-- Step 4 -->
+      <div class="step" data-loc="[37.186436321825376, -118.70335275151977]" data-zoom="8">
+        <h2>Kings Canyon Wilderness, California  2023</h2>
+        <p>My first job out of college: alpine lake restorationist. Backpacking deep into the sierras in order to restore Sierra Nevada yellow-legged frogs.</p>
+        <img src="{{ "/images/seki1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+      
+      <!-- Step 5 -->
+      <div class="step" data-loc="[35.78536158438073, -78.68131459009965]" data-zoom="8">
+        <h2>Raleigh, NC  2023</h2>
+        <p>Learnning about leading and advocacy: club president for NC State's Backcountry Hunters and Anglers collegiate club.</p>
+        <img src="{{ "/images/bha1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+       
+      <!-- Step 6 -->
+      <div class="step" data-loc="[44.575366600493226, -118.49336759778005]" data-zoom="8">
+        <h2>John Day, OR  2022</h2>
+        <p>Falling in love with the west. Driving around the Columbia river basin measuring streams for salmonids.</p>
+        <img src="{{ "/images/oregon1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+
+      <!-- Step 7 -->
+      <div class="step" data-loc="[35.85627598768409, -75.86287166963079]" data-zoom="8">
+        <h2>Columbia, NC  2021</h2>
+        <p>A pandemic, a little luck, and red wolves. My first job that helped me realize that I can get paid to look at wildlife while exploring some of the coolest places on earth.</p>
+        <img src="{{ "/images/redwolf1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+
+      
+      <!-- Step 8 -->
+      <div class="step" data-loc="[35.791045374475424, -78.70146046897503]" data-zoom="8">
+        <h2>Raleigh, NC  2019</h2>
+        <p>Cutting my teeth in the lab. A chance to learn about labwork, networking, and science before college.</p>
+      </div>
+
+      <!-- Step 10 -->
+      <div class="step" data-loc="[34.22239897380213, -77.86843380202774]" data-zoom="8">
+        <h2>Wilmington, NC  2018</h2>
+        <p>A camp like no other: UNCW's MarineQuest sold me conservation as a career, taught me about research, and open my eyues to the world underwater.</p>
+        <img src="{{ "/images/diving1.jpg" | relURL }}" alt="Future Plans" class="step-img">
+      </div>
+     
+ 
+     <!-- Where Next -->
+      <div class="step" data-loc="[20, 0]" data-zoom="2">
+        <h2>I've seen a lot of country</h2>
+        <p>But theres a whole world left.</p>
+      </div>
+      
+      
+    </div> <!-- /scroll -->
+  </div> <!-- /storymap -->
+</div> <!-- /storymap-wrapper -->
+
+<!-- Leaflet & Scrollama -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/scrollama"></script>
+<script src="{{ "js/storymap.js" | relURL }}"></script>
+

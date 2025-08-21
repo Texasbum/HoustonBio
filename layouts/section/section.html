@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <!-- Optional Hero Image -->
+  {{ with .Params.header_image }}
+    <div class="hero-image-container">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+    </div>
+  {{ end }}
+
+  <!-- Force consistent container -->
+  <div class="custom-container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+    {{ .Content }}
+  </div>
+{{ end }}

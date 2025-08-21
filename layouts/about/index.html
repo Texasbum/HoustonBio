@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<!-- Hero image + other Markdown content -->
+{{ .Content | safeHTML }}
+
+<!-- Full-width storymap -->
+<div class="storymap-wrapper">
+  {{ partial "storymap.html" . }}
+</div>
+
+{{ end }}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 
 <body>
   {{ partial "nav.html" . }}
@@ -10,9 +10,9 @@
   <header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}')">
       <div class="container">
           <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   <div class="site-heading">
-                      <h1>{{ .Site.Title}} </h1>
+                      <h1>{{ .Site.Title }}</h1>
                       <span class="subheading">{{ .Site.Params.slogan }}</span>
                   </div>
               </div>
@@ -21,10 +21,11 @@
   </header>
   {{ end }}
 
+  <!-- Main Content -->
   {{ block "main" . }}
-  <div class="custom-container">
-    {{ .Content }}
-  </div>
+    <main class="custom-container {{ .Params.class }}">
+      {{ .Content }}
+    </main>
   {{ end }}
 
   {{ partial "footer.html" . }}

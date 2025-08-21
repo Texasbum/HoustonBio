@@ -31,3 +31,45 @@
 }<div class="hero-image-container">
   ![Hero Image](/img/MTs.jpg)
 </div>
+
+/* ==== Field Notes Photo Styling ==== */
+
+/* Full-width hero/impact photos */
+figure.full img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem 0;
+}
+
+/* Grid row wrapper */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* spacing between photos */
+  margin: 1rem 0;
+}
+
+/* Columns for 2- or 3-photo layouts */
+.col-6 {
+  flex: 0 0 48%; /* two columns (side by side) */
+}
+
+.col-4 {
+  flex: 0 0 32%; /* three columns across */
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* soft edges, optional */
+  display: block;
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 768px) {
+  .col-6,
+  .col-4 {
+    flex: 0 0 100%; /* stack columns on tablets & phones */
+  }
+}
