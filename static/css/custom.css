@@ -1,33 +1,152 @@
+/* ============================ */
+/* Main container for text content */
 .custom-container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-#storymap {
-  height: 400px;
-  margin-bottom: 30px;
-}
-
+/* ============================ */
+/* Hero Images */
 .hero-image-container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
   text-align: center;
 }
-
 .hero-image-container img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
   border-radius: 8px;
   display: inline-block;
-}<div class="hero-image-container">
-  ![Hero Image](/img/MTs.jpg)
-</div>
+}
+
+/* ============================ */
+/* Storymap wrapper */
+.storymap-wrapper {
+  max-width: 1200px;      /* or try 1100px for a bit more padding */
+  margin: 0 auto 30px;    /* centers the wrapper */
+  padding: 0 ;        /* increase horizontal padding to add breathing room */
+  box-sizing: border-box;
+}
+
+/* ============================ */
+/* Flex container for map + scrollable text */
+#storymap {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 80vh;          /* adjust as needed */
+  box-sizing: border-box;
+}
+
+/* ============================ */
+/* Map section (~60%) */
+#map {
+  flex: 3;
+  min-width: 300px;
+  height: 100%;
+  position: relative !important;  /* ensures map respects wrapper padding */
+  max-width: calc(100% - 20px);
+}
+
+/* ============================ */
+/* Scrollable text section (~40%) */
+#scroll {
+  flex: 2;
+  min-width: 300px;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  box-sizing: border-box;
+}
+
+/* ============================ */
+/* Field Notes / Media Photo Styling */
+.media-grid .row,
+.fieldnotes-grid .row,
+.figure-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0;
+}
+.media-grid .col-6,
+.fieldnotes-grid .col-6,
+.figure-grid .col-6 {
+  flex: 0 0 48%;
+}
+.media-grid .col-4,
+.fieldnotes-grid .col-4,
+.figure-grid .col-4 {
+  flex: 0 0 32%;
+}
+.media-grid .row img,
+.fieldnotes-grid .row img,
+.figure-grid .row img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ============================ */
+/* Scroll steps for story map */
+.step {
+  margin-bottom: 80vh;
+  padding: 1rem;
+  border-left: 4px solid #ccc;
+  transition: background 0.5s, border-color 0.5s;
+}
+
+.step.active {
+  border-color: #2b7a78;
+  background: #e0f7f7;
+}
+
+.step-img {
+  display: block;
+  max-width: 600px;   /* cap image size */
+  width: 100%;        /* still responsive */
+  margin: 1rem auto;  /* center horizontally */
+  border-radius: 8px; /* optional: soften corners */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.step.active .step-img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================ */
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  #storymap {
+    flex-direction: column;
+    height: auto;
+  }
+  #map {
+    height: 50vh;
+  }
+  #scroll {
+    max-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .media-grid .col-6,
+  .media-grid .col-4,
+  .fieldnotes-grid .col-6,
+  .fieldnotes-grid .col-4,
+  .figure-grid .col-6,
+  .figure-grid .col-4 {
+    flex: 0 0 100%;
+  }
+  .hero-image-container img {
+    width: 100%;
+    max-height: 400px;
+  }
+}
