@@ -150,3 +150,70 @@
     max-height: 400px;
   }
 }
+
+/* ========================= */
+/* Media Page Cards */
+/* ========================= */
+.media-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.media-card img {
+  width: 160px;        /* force smaller preview */
+  height: auto;        /* keep aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;      /* don't let image stretch */
+}
+
+.media-card-body {
+  flex: 1;
+}
+
+.media-card-body h3 {
+  margin: 0 0 0.25rem;
+}
+
+.media-card-body p {
+  margin: 0;
+  color: #555;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .media-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .media-card img {
+    width: 100%;
+    max-width: 300px;   /* don’t let it get huge */
+  }
+}
+/* Grid wrapper for photo index */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Make sure media-card images behave */
+.media-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}

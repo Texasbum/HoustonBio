@@ -1,0 +1,9 @@
+<div class="media-card">
+  <a href="{{ .Get "link" }}">
+    <img src="{{ .Get "img" }}" alt="{{ .Get "alt" }}">
+  </a>
+  <div class="media-card-body">
+    <h3><a href="{{ .Get "link" }}">{{ .Get "title" }}</a></h3>
+    <p>{{ .Get "desc" }}</p>
+  </div>
+</div>

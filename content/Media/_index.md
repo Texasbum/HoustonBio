@@ -11,24 +11,18 @@ Welcome to my media collection! Below are photos I've taken and articles I've wr
 
 ## Photos
 
-<div class="media-card">
-  <a href="/media/photos/">
-    <img src="/images/photos/goldeneyes.jpg" alt="Photos preview">
-  </a>
-  <div class="media-card-body">
-    <h3><a href="/media/photos/">View All Photos</a></h3>
-    <p>Explore my collection of photos from fieldwork and travels.</p>
-  </div>
-</div>
+{{< media-card 
+    link="/media/photos/" 
+    img="/images/photos/goldeneyes.jpg" 
+    alt="Photos preview" 
+    title="View All Photos" 
+    desc="Explore my collection of photos from fieldwork and travels." >}}
 
 ## Articles
 
-<div class="media-card">
-  <a href="/media/articles/">
-    <img src="/images/articles/me.jpg" alt="Articles preview">
-  </a>
-  <div class="media-card-body">
-    <h3><a href="/media/articles/">View All Articles</a></h3>
-    <p>Read articles I've written or been featured in.</p>
-  </div>
-</div>
+{{< media-card 
+    link="/media/articles/" 
+    img="/images/articles/me.jpg" 
+    alt="Articles preview" 
+    title="View All Articles" 
+    desc="Read articles I've written or been featured in." >}}
